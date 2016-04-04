@@ -1,0 +1,14 @@
+      </div><!-- end of .pepagram-utility-layout -->
+    </div><!-- end of .pepagram-content -->
+    <div class="pepagram-footer">
+      <div class="pepagram-utility-layout">
+        <div class="pepagram-footer__copyright">
+          © <%= Time.now.year %> <%= @config['pepagram']['author'] %>
+        </div>
+        <div class="pepagram-footer__pubdate" title="<%= Time.now %>">
+          最終更新日: <%= Time.now.strftime("%Y年%-m月%-d日") %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

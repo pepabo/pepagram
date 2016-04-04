@@ -1,0 +1,25 @@
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin typography {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+}
+
+@mixin if-phone {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+body {
+  background-color: #fff;
+}
+pre,
+code {
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}

@@ -1,0 +1,29 @@
+# Hologram の設定ファイルです。
+# ファイル・ディレクトリのパスは、相対パスで指定します。
+
+# Hologram 向けにスタイルガイドのコメントが書いてある、
+# スタイルシートファイルのディレクトリを指定します。
+source: stylesheets
+
+# スタイルガイドの HTML ファイルを書き出すディレクトリを指定します。
+destination: styleguide
+
+# アプリケーションの CSS ファイルを指定します。
+# スタイルガイドの HTML ファイルのあるディレクトリから相対パスで指定します。
+application_css:
+  - 'main.css'
+  - 'component.css'
+
+# スタイルガイドのテーマに関するファイルのディレクトリを指定します。
+documentation_assets: doc_assets
+
+# Markdown をレンダリングするときに、
+# マークアップをカスタマイズするためのファイルを指定します。
+custom_markdown: doc_assets/_markdown_renderer.rb
+
+# スタイルガイドの設定をします。
+# theme_color にプロジェクトのキーカラーを指定すると、好きな配色に変えられます。
+pepagram:
+  title: 'Example Style Guide'
+  author: 'GMO Pepabo, Inc.'
+  theme_color: '#3e6f99'

@@ -1,0 +1,293 @@
+/**
+ * Copyright (c) 2013 Trulia, Inc.
+ *
+ * MIT License
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+hll {
+  background-color: #ffc;
+}
+/* Comment */
+.c {
+  color: #998;
+  font-style: italic;
+}
+/* Error */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2;
+}
+/* Keyword */
+.k {
+  color: #000;
+  font-weight: bold;
+}
+/* Operator */
+.o {
+  color: #000;
+  font-weight: bold;
+}
+/* Comment.Multiline */
+.cm {
+  color: #998;
+  font-style: italic;
+}
+/* Comment.Preproc */
+.cp {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comment.Single */
+.c1 {
+  color: #998;
+  font-style: italic;
+}
+/* Comment.Special */
+.cs {
+  color: #999;
+  font-weight: bold;
+  font-style: italic;
+}
+/* Generic.Deleted */
+.gd {
+  color: #000;
+  background-color: #fdd;
+}
+/* Generic.Emph */
+.ge {
+  color: #000;
+  font-style: italic;
+}
+/* Generic.Error */
+.gr {
+  color: #a00;
+}
+/* Generic.Heading */
+.gh {
+  color: #999;
+}
+/* Generic.Inserted */
+.gi {
+  color: #000;
+  background-color: #dfd;
+}
+/* Generic.Output */
+.go {
+  color: #888;
+}
+/* Generic.Prompt */
+.gp {
+  color: #555;
+}
+/* Generic.Strong */
+.gs {
+  font-weight: bold;
+}
+/* Generic.Subheading */
+.gu {
+  color: #aaa;
+}
+/* Generic.Traceback */
+.gt {
+  color: #a00;
+}
+/* Keyword.Constant */
+.kc {
+  color: #000;
+  font-weight: bold;
+}
+/* Keyword.Declaration */
+.kd {
+  color: #000;
+  font-weight: bold;
+}
+/* Keyword.Namespace */
+.kn {
+  color: #000;
+  font-weight: bold;
+}
+/* Keyword.Pseudo */
+.kp {
+  color: #000;
+  font-weight: bold;
+}
+/* Keyword.Reserved */
+.kr {
+  color: #000;
+  font-weight: bold;
+}
+/* Keyword.Type */
+.kt {
+  color: #458;
+  font-weight: bold;
+}
+/* Literal.Number */
+.m {
+  color: #099;
+}
+/* Literal.String */
+.s {
+  color: #d01040;
+}
+/* Name.Attribute */
+.na {
+  color: #008080;
+}
+/* Name.Builtin */
+.nb {
+  color: #0086b3;
+}
+/* Name.Class */
+.nc {
+  color: #458;
+  font-weight: bold;
+}
+/* Name.Constant */
+.no {
+  color: #008080;
+}
+/* Name.Decorator */
+.nd {
+  color: #3c5d5d;
+  font-weight: bold;
+}
+/* Name.Entity */
+.ni {
+  color: #800080;
+}
+/* Name.Exception */
+.ne {
+  color: #900;
+  font-weight: bold;
+}
+/* Name.Function */
+.nf {
+  color: #900;
+  font-weight: bold;
+}
+/* Name.Label */
+.nl {
+  color: #900;
+  font-weight: bold;
+}
+/* Name.Namespace */
+.nn {
+  color: #555;
+}
+/* Name.Tag */
+.nt {
+  color: #000080;
+}
+/* Name.Variable */
+.nv {
+  color: #008080;
+}
+/* Operator.Word */
+.ow {
+  color: #000;
+  font-weight: bold;
+}
+/* Text.Whitespace */
+.w {
+  color: #bbb;
+}
+/* Literal.Number.Float */
+.mf {
+  color: #099;
+}
+/* Literal.Number.Hex */
+.mh {
+  color: #099;
+}
+/* Literal.Number.Integer */
+.mi {
+  color: #099;
+}
+/* Literal.Number.Oct */
+.mo {
+  color: #099;
+}
+/* Literal.String.Backtick */
+.sb {
+  color: #d01040;
+}
+/* Literal.String.Char */
+.sc {
+  color: #d01040;
+}
+/* Literal.String.Doc */
+.sd {
+  color: #d01040;
+}
+/* Literal.String.Double */
+.s2 {
+  color: #d01040;
+}
+/* Literal.String.Escape */
+.se {
+  color: #d01040;
+}
+/* Literal.String.Heredoc */
+.sh {
+  color: #d01040;
+}
+/* Literal.String.Interpol */
+.si {
+  color: #d01040;
+}
+/* Literal.String.Other */
+.sx {
+  color: #d01040;
+}
+/* Literal.String.Regex */
+.sr {
+  color: #009926;
+}
+/* Literal.String.Single */
+.s1 {
+  color: #d01040;
+}
+/* Literal.String.Symbol */
+.ss {
+  color: #990073;
+}
+/* Name.Builtin.Pseudo */
+.bp {
+  color: #999;
+}
+/* Name.Variable.Class */
+.vc {
+  color: #008080;
+}
+/* Name.Variable.Global */
+.vg {
+  color: #008080;
+}
+/* Name.Variable.Instance */
+.vi {
+  color: #008080;
+}
+/* Literal.Number.Integer.Long */
+.il {
+  color: #099;
+}

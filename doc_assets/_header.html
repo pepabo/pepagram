@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="author" content="<%= @config['pepagram']['author'] %>">
+
+    <title>
+      <% if title && title != 'index' %><%= title.capitalize %> - <% end %><%= @config['pepagram']['title'] %>
+    </title>
+
+    <% if @config['application_css'].to_s.strip.length != 0 %>
+      <% @config['application_css'].each do |css| %>
+        <link rel="stylesheet" href="<%= css %>">
+      <% end %>
+    <% end %>
+
+    <link rel="stylesheet" href="pepagram.css">
+
+    <% if @config['pepagram']['theme_color'] %>
+      <style>
+        .pepagram-header__heading,
+        .pepagram-header__list,
+        .pepagram-header__item,
+        .pepagram-header__item a,
+        .pepagram-content a {
+          color: <%= @config['pepagram']['theme_color'] %>;
+        }
+        .pepagram-header.pepagram-header--index,
+        .pepagram-nav,
+        .pepagram-animation-example {
+          background-color: <%= @config['pepagram']['theme_color'] %>;
+        }
+      </style>
+    <% end %>
+  </head>
+  <body>
+    <div class="pepagram-nav">
+      <div class="pepagram-nav__container">
+        <div class="pepagram-nav__brand">
+          <a href="index.html">
+            <img src="./images/example-project-logo@2x.png" alt="<%= @config['pepagram']['title'] %>">
+          </a>
+        </div>
+        <div class="pepagram-nav__menu">
+          <% @categories.sort.each do |category| %>
+            <% unless category[0] == 'index' %>
+              <a class="pepagram-nav__item
+                        <% if category[0] == title %> pepagram-nav__item--current<% end %>"
+                 href="<%= category[1] %>">
+                <%= category[0] %>
+              </a>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <% if title %>
+      <% unless title == 'index' %>
+        <div class="pepagram-header">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-header__heading">
+              <%= title %>
+            </div>
+            <div class="pepagram-header__list">
+              <% @blocks.each do |block| %>
+                <div class="pepagram-header__item">
+                  <a href="#<%= block[:name] %>"><%= block[:title] %></a>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% else %>
+        <div class="pepagram-header pepagram-header--index">
+          <div class="pepagram-utility-layout">
+            <div class="pepagram-header__heading">
+              <%= @config['pepagram']['title'] %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+    <div class="pepagram-content">
+      <div class="pepagram-utility-layout">

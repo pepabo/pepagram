@@ -1,0 +1,18 @@
+{
+  "name": "pepagram",
+  "version": "0.0.1",
+  "description": "A minimal Hologram theme for GMO Pepabo, Inc.",
+  "license": [
+    "MIT"
+  ],
+  "homepage": "https://github.com/pepabo/pepagram",
+  "authors": [
+    "shikakun <shikakun@pepabo.com>"
+  ],
+  "keywords": [
+    "hologram",
+    "pepabo",
+    "styleguide",
+    "theme"
+  ]
+}

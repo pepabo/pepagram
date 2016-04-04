@@ -1,0 +1,28 @@
+{
+  "name": "pepagram",
+  "version": "0.0.1",
+  "description": "A minimal Hologram theme for GMO Pepabo, Inc.",
+  "main": "README.md",
+  "scripts": {
+    "build": "node-sass styles --output doc_assets --output-style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pepabo/pepagram.git"
+  },
+  "keywords": [
+    "hologram",
+    "pepabo",
+    "styleguide",
+    "theme"
+  ],
+  "author": "shikakun <shikakun@pepabo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pepabo/pepagram/issues"
+  },
+  "homepage": "https://github.com/pepabo/pepagram",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
+}
