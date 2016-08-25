@@ -68,10 +68,12 @@ custom_markdown: doc_assets/_markdown_renderer.rb
 
 # スタイルガイドの設定をします。
 # theme_color にプロジェクトのキーカラーを指定すると、好きな配色に変えられます。
+# brand_image に画像ファイルを指定すると、好きな画像を設置できます。
 pepagram:
   title: 'Example Style Guide'
   author: 'GMO Pepabo, Inc.'
   theme_color: '#3e6f99'
+  brand_image: 'my-brand-image.jpg'
 ```
 
 > #### たとえば Rails アプリケーションなら
