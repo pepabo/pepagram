@@ -28,5 +28,4 @@ pepagram:
   title: 'Example Style Guide'
   author: 'GMO Pepabo, Inc.'
   theme_color: '#3e6f99'
-  brand_image: 'my-brand-image.jpg'
-  
+  brand_image: 'images/example-brand-image@2x.png'
