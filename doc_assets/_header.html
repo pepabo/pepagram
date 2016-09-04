@@ -40,7 +40,11 @@
       <div class="pepagram-nav__container">
         <div class="pepagram-nav__brand">
           <a href="index.html">
-            <img src="./images/example-project-logo@2x.png" alt="<%= @config['pepagram']['title'] %>">
+            <% if @config['pepagram']['brand_image'] %>
+              <img src="<%= @config['pepagram']['brand_image'] %>" alt="<%= @config['pepagram']['title'] %>">
+            <% else %>
+              <img src="./images/example-project-logo@2x.png" alt="<%= @config['pepagram']['title'] %>">
+            <% end %>
           </a>
         </div>
         <div class="pepagram-nav__menu">
