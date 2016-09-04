@@ -43,7 +43,7 @@
             <% if @config['pepagram']['brand_image'] %>
               <img src="<%= @config['pepagram']['brand_image'] %>" alt="<%= @config['pepagram']['title'] %>">
             <% else %>
-              <img src="./images/example-project-logo@2x.png" alt="<%= @config['pepagram']['title'] %>">
+              <%= @config['pepagram']['title'] %>
             <% end %>
           </a>
         </div>
