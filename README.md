@@ -1,5 +1,7 @@
 # Pepagram
 
+[![NPM version](https://img.shields.io/npm/v/pepagram.svg)](https://www.npmjs.org/package/pepagram)
+
 GMOペパボ株式会社で利用している、スタイルガイドジェネレータ [Hologram](http://trulia.github.io/hologram/) のテーマです。
 
 ## Preview
